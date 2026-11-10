@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+const fx=12.257, ES=11.2174;
+function calc(price_rub,weight_g,cost){const retail=price_rub/fx;const value=cost+3;const w=weight_g;const fix=value<=135?2.90:15.48;const per=value<=135?0.0247:0.0242;const ship=fix+per*w;const esvc=Math.min(200,Math.max(15,value*ES*0.02))/ES;const comm=retail*0.12;const acq=retail*0.002;const ads=retail*0.12;const ret=retail*0.06;const tot=cost+3+2+ship+esvc+comm+acq+ads+ret;return {profit:retail-tot,margin:(retail-tot)/retail*100,shipPct:ship/retail*100};}
+const prices=[599,799,999,1199], weights=[100,200,300,450];
+for(const w of weights){const row=[String(w)+'g'];for(const p of prices){const r=calc(p,w,12);row.push(p+'₽: ¥'+r.profit.toFixed(1)+' / '+r.margin.toFixed(0)+'% / 物流'+r.shipPct.toFixed(0)+'%');}console.log(row.join(' | '));}

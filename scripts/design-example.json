@@ -1,0 +1,94 @@
+{
+  "images": [
+    {
+      "url": "https://cdn.example.com/designs/1.jpg",
+      "index": 0
+    },
+    {
+      "url": "https://cdn.example.com/designs/2.jpg",
+      "index": 1
+    },
+    {
+      "url": "https://cdn.example.com/designs/3.jpg",
+      "index": 2
+    },
+    {
+      "url": "https://cdn.example.com/designs/4.jpg",
+      "index": 3
+    },
+    {
+      "url": "https://cdn.example.com/designs/5.jpg",
+      "index": 4
+    },
+    {
+      "url": "https://cdn.example.com/designs/6.jpg",
+      "index": 5
+    }
+  ],
+  "palette": [
+    [
+      255,
+      255,
+      255
+    ],
+    [
+      0,
+      26,
+      52
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      255,
+      255,
+      255
+    ],
+    [
+      0,
+      26,
+      52
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      255,
+      255,
+      255
+    ],
+    [
+      0,
+      26,
+      52
+    ]
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "order": 0,
+      "text": "Описание"
+    },
+    {
+      "type": "image",
+      "order": 1
+    },
+    {
+      "type": "text",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "order": 3
+    },
+    {
+      "type": "table",
+      "order": 4
+    }
+  ],
+  "notes": "示例：Ozon 商品页主图白底沿用 #001a34 深蓝做强调色；详情页顺序 heading → image → text → image → table（演示用的示例图片，非真实商品）"
+}

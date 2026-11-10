@@ -1,0 +1,12 @@
+{
+  "batchId": "demo-lovart-2026-11",
+  "product": {
+    "nameRu": "Лопатка силиконовая 28 см",
+    "nameEn": "grey silicone kitchen spatula 28 cm",
+    "material": "food-grade silicone with stiff core",
+    "colors": ["grey"],
+    "setting": "light wooden countertop, minimal bright kitchen"
+  },
+  "shots": ["lifestyle", "detail"],
+  "aspectRatio": "3:4"
+}

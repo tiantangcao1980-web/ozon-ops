@@ -1,0 +1,35 @@
+# 凭据：只放本地 .secrets/，绝不提交
+.secrets/
+*.env
+!ozon.env.example
+
+# 运行产物与本地数据
+data/
+db/
+raw/
+reports/
+outbox/
+models/
+spec/
+.tmpdb/
+.cdp-profile/
+.realdat
+
+# 浏览器 profile（含登录 cookie）
+.chrome-*/
+.chrome-*
+
+# 依赖与工具
+node_modules/
+.superpowers/
+comfyui/
+imgwork/.venv/
+
+# 媒体资产与日志
+assets/video/
+assets/upload/
+*.log
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db

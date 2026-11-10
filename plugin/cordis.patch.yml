@@ -1,0 +1,3 @@
+- insert:
+    - id: ozon-ops
+      name: '@local/ozon-ops'

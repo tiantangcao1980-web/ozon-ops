@@ -1,0 +1,33 @@
+{
+  "name": "ozon-ops",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "OZON AI 跨境运营系统：取数内核与选品决策台",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "jimp": "^0.22.12"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ozon",
+    "ecommerce",
+    "seller-api",
+    "cross-border",
+    "cli",
+    "sqlite"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiantangcao1980-web/ozon-ops.git"
+  },
+  "homepage": "https://github.com/tiantangcao1980-web/ozon-ops#readme",
+  "bugs": {
+    "url": "https://github.com/tiantangcao1980-web/ozon-ops/issues"
+  }
+}

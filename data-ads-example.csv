@@ -1,0 +1,5 @@
+campaign_id;date;impressions;clicks;spend_rub;orders;revenue_rub
+ad-demo-1;2026-11-05;12000;240;1800;12;7200
+ad-demo-1;2026-11-06;9800;190;1500;9;5400
+ad-demo-2;2026-11-05;4000;40;900;1;600
+ad-demo-2;2026-11-06;3800;36;850;0;0

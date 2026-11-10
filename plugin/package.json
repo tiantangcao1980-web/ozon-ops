@@ -1,0 +1,22 @@
+{
+  "name": "@local/ozon-ops",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "OZON 运营系统入口：一个技能 + 一个工具，把取数、日报、预警、选品、翻译、视觉拆解、写操作提案接到 DSH。",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

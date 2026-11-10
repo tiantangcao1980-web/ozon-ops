@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-11-10T07:48:52.461Z",
+  "rows": [
+    {
+      "path": "/v1/seller/info",
+      "status": 200,
+      "ok": true,
+      "note": "店铺主体与订阅"
+    },
+    {
+      "path": "/v1/roles",
+      "status": 200,
+      "ok": true,
+      "note": "密钥角色与权限"
+    },
+    {
+      "path": "/v1/rating/summary",
+      "status": 200,
+      "ok": true,
+      "note": "店铺健康分"
+    },
+    {
+      "path": "/v2/warehouse/list",
+      "status": 200,
+      "ok": true,
+      "note": "发货仓列表"
+    },
+    {
+      "path": "/v3/product/list",
+      "status": 200,
+      "ok": true,
+      "note": "商品列表（ALL）"
+    },
+    {
+      "path": "/v3/product/list",
+      "status": 200,
+      "ok": true,
+      "note": "商品列表（ARCHIVED）"
+    },
+    {
+      "path": "/v3/product/info/list",
+      "status": 200,
+      "ok": true,
+      "note": "商品档案（按 sku）"
+    },
+    {
+      "path": "/v5/product/info/prices",
+      "status": 200,
+      "ok": true,
+      "note": "价格与佣金"
+    },
+    {
+      "path": "/v4/product/info/stocks",
+      "status": 200,
+      "ok": true,
+      "note": "库存"
+    },
+    {
+      "path": "/v4/posting/fbs/list",
+      "status": 200,
+      "ok": true,
+      "note": "订单列表（实际可用版本）"
+    },
+    {
+      "path": "/v3/posting/fbs/list",
+      "status": 404,
+      "ok": false,
+      "code": null,
+      "message": "404 page not found\n",
+      "note": "旧版订单列表（已知线上 404）"
+    },
+    {
+      "path": "/v4/posting/fbs/unfulfilled/list",
+      "status": 200,
+      "ok": true,
+      "note": "待发货清单"
+    },
+    {
+      "path": "/v3/posting/fbo/list",
+      "status": 200,
+      "ok": true,
+      "note": "FBO 订单"
+    },
+    {
+      "path": "/v1/analytics/data",
+      "status": 200,
+      "ok": true,
+      "note": "自店销量分析（1 次/分钟）"
+    },
+    {
+      "path": "/v1/analytics/stocks",
+      "status": 429,
+      "ok": false,
+      "code": 8,
+      "message": "You have reached request rate limit per second",
+      "note": "库存速度（需 skus）"
+    },
+    {
+      "path": "/v1/description-category/tree",
+      "status": 200,
+      "ok": true,
+      "note": "类目树"
+    },
+    {
+      "path": "/v1/description-category/attribute",
+      "status": 400,
+      "ok": false,
+      "code": 3,
+      "message": "category with level_3_id=17028922 and type=1 is not found",
+      "note": "类目属性"
+    },
+    {
+      "path": "/v1/finance/balance",
+      "status": 200,
+      "ok": true,
+      "note": "财务余额（单次≤1 月）"
+    },
+    {
+      "path": "/v1/search-queries/top",
+      "status": 403,
+      "ok": false,
+      "code": 7,
+      "message": "Method available with Premium Pro subscription",
+      "note": "市场需求（Premium Pro）"
+    },
+    {
+      "path": "/v1/analytics/category/comparison",
+      "status": 403,
+      "ok": false,
+      "code": 7,
+      "message": "analyticsSrv.AnalyticsDecommissionedGoods: rpc error: code = PermissionDenied desc = Analytics available from the premium pro subscription",
+      "note": "类目竞争（Premium）"
+    },
+    {
+      "path": "/v2/review/list",
+      "status": 403,
+      "ok": false,
+      "code": 7,
+      "message": "i.service.ReviewInfoV2: ReviewListV2 s.CheckSellerReviewAccess: rpc error: code = PermissionDenied desc = not available with existing subscription",
+      "note": "评价（需评价管理订阅）"
+    },
+    {
+      "path": "/v1/question/list",
+      "status": 403,
+      "ok": false,
+      "code": 7,
+      "message": "GetQuestionList error: GetQuestionList: checkSellerPremiumPlus error: rpc error: code = PermissionDenied desc = Information is only available with a Premium Plus subscription.",
+      "note": "问答（需 Premium Plus）"
+    }
+  ],
+  "usable": [
+    "/v1/seller/info",
+    "/v1/roles",
+    "/v1/rating/summary",
+    "/v2/warehouse/list",
+    "/v3/product/list",
+    "/v3/product/info/list",
+    "/v5/product/info/prices",
+    "/v4/product/info/stocks",
+    "/v4/posting/fbs/list",
+    "/v4/posting/fbs/unfulfilled/list",
+    "/v3/posting/fbo/list",
+    "/v1/analytics/data",
+    "/v1/description-category/tree",
+    "/v1/finance/balance"
+  ],
+  "blocked": [
+    "/v1/search-queries/top",
+    "/v1/analytics/category/comparison",
+    "/v2/review/list",
+    "/v1/question/list"
+  ],
+  "drifted": [
+    "/v3/posting/fbs/list"
+  ],
+  "needsParams": [
+    "/v1/description-category/attribute"
+  ],
+  "failed": [
+    {
+      "path": "/v1/analytics/stocks",
+      "status": 429,
+      "ok": false,
+      "code": 8,
+      "message": "You have reached request rate limit per second",
+      "note": "库存速度（需 skus）"
+    }
+  ]
+}
